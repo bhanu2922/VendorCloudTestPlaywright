@@ -1,0 +1,22 @@
+--- Introduction to playwright -------------
+
+Why playwright ? 
+    -> It has autowait like capability - like we dont have to give explicitly wait command to wait for an element to available. 
+    -> It has a multiplatform support like - it work seamlessly on windoes , mac os and also support mobile emulation for google
+       android and safari on ios. 
+    -> It has cross browser facility - means it supports all the browsers like chrome browser and edge etc. 
+    -> Playwright can be written in javascript , typescript , java , python etc .
+
+    -> It also provides Tracing and debugging - means we can each steps live and see how the things is working or how 
+       the testing works. 
+    -> We can also use codeGen tool to genearte test code automatically.
+
+-- Basic structure of playwright code 
+  import test from "@playwright/test";
+
+   test('First Playwright Test' , function(){
+       // playwright code 
+       
+   
+   });
+
