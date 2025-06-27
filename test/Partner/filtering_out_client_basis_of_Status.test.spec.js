@@ -2,7 +2,7 @@ import {test} from "@playwright/test"
 import {LoginPage} from "../../pages/LoginPage"
 import { TC3Page } from "../../pages/TC3Page";
 
-test.only('When I am adding a client with a status active and when I filter out the client on the basis of status , it is showing active member ', async ({page})=>{
+test('When I am adding a client with a status active and when I filter out the client on the basis of status , it is showing active member ', async ({page})=>{
     const login = new LoginPage(page);
     const testCase3 = new TC3Page(page);
 
