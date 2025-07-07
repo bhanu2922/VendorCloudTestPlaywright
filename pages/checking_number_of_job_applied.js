@@ -1,5 +1,5 @@
 export class checking_number_of_job_applied{
-    constructor(page){
+    constructor(){
         this.page = page ; 
         this.totaljobapplied = page.locator("//p[@class='text-base' and text()='Total job applied']/ancestor::div[1]//h5");
         this.showingResults = page.locator("(//p[contains(text(),'Showing')]//span)[2]")

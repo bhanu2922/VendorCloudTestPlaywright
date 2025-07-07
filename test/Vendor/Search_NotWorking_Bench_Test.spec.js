@@ -2,8 +2,6 @@ import {test} from "@playwright/test";
 import { LoginPage } from "../../pages/LoginPage";
 import { TC9Page } from "../../pages/TC9Page";
 
-
-
 test('In vendor side when we go to the bench section and click on matching positions the search bar is not working.' , async ({page})=>{
     const login = new  LoginPage(page);
     const testcase9 = new TC9Page(page);
