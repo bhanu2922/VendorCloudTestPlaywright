@@ -23,7 +23,7 @@ export class DashboardPage{
         
            const quantity =  await this.page.locator(`//table//tbody//tr[${j}]//td[3]//span`).textContent();
            // console.log(quantity)
-           totalOpenPositions += parseInt(quantity.substring(0,1));
+           totalOpenPositions += parseInt(quantity.split("\\s")[0]);
            if( j % 15 == 0 ){
                 await this.page.locator('//button[2]').click();
                 j = 0;
@@ -33,7 +33,7 @@ export class DashboardPage{
         }
         console.log(totalOpenPositions);
         console.log(cardValue);
-
+ 
         if (cardValue == totalOpenPositions) {
           console.log("Test passed");
         } else {
